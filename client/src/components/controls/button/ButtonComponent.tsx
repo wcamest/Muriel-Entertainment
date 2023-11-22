@@ -4,17 +4,20 @@ import React, { PropsWithChildren } from "react";
 type Props = {
   href?: string;
   outline?: boolean;
+  fullWidth?: boolean;
 };
 
 const ButtonComponent = (props: PropsWithChildren<Props>) => {
-  const { href, outline, children } = props;
+  const { href, outline, fullWidth, children } = props;
 
   const Renderer = {
     Button() {
       if (outline)
         return (
           <button
-            className={`px-6 py-2 text-teal-800 hover:text-teal-50 active:text-teal-50 border border-solid border-teal-800 hover:bg-teal-600 active:bg-teal-800 outline-none rounded-md`}
+            className={`${
+              fullWidth ? "w-full" : "w-fit"
+            } px-6 py-2 text-teal-800 hover:text-teal-50 active:text-teal-50 border border-solid border-teal-800 hover:bg-teal-600 active:bg-teal-800 outline-none rounded-md`}
           >
             {children}
           </button>
@@ -22,7 +25,9 @@ const ButtonComponent = (props: PropsWithChildren<Props>) => {
 
       return (
         <button
-          className={`px-6 py-2 text-teal-50 active:text-teal-800 border border-solid border-teal-800 hover:border-teal-700 bg-teal-800 hover:bg-teal-700 active:bg-teal-50 outline-none rounded-md`}
+          className={`${
+            fullWidth ? "w-full" : "w-fit"
+          } px-6 py-2 text-teal-50 active:text-teal-800 border border-solid border-teal-800 hover:border-teal-700 bg-teal-800 hover:bg-teal-700 active:bg-teal-50 outline-none rounded-md`}
         >
           {children}
         </button>

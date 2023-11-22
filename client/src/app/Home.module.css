@@ -1,0 +1,56 @@
+.image_background {
+  background-image: url("/bg-landing-page-2.webp");
+}
+
+.colored_background_eafffd {
+  background-color: #eafffd;
+  width: 100%;
+  height: 400%;
+  transform-origin: center;
+  transform: rotate(15deg);
+}
+
+.colored_background_004d44 {
+  background-color: #004d44;
+  width: 100%;
+  height: 400%;
+  transform-origin: center;
+  transform: rotate(12deg);
+  margin-left: -100px;
+}
+
+.art_container {
+  transform-origin: center;
+  transform: rotate(15deg);
+}
+
+.art_1_shell {
+  position: absolute;
+  top: 15%;
+  left: -105px;
+  transform-origin: center;
+  transform: rotate(-15deg);
+}
+
+.art_2_starfish {
+  position: absolute;
+  bottom: -100px;
+  left: -70px;
+  transform-origin: center;
+  transform: scale(1.5)
+}
+
+.art_3_fish {
+    position: absolute;
+    bottom: -120px;
+    left: 100px;
+    transform-origin: center;
+  }
+
+.art_4_fishes_and_seahorse{
+    position: absolute;
+    bottom: 100px;
+    right: -70px;
+    transform-origin: center;
+    transform: rotate(-15deg);
+}

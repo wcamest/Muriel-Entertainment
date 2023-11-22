@@ -1,11 +1,10 @@
 import React from 'react'
-import Home from './Home'
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
-    <Home />
+    <div>page</div>
   )
 }
 

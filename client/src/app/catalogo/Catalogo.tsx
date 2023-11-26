@@ -1,4 +1,5 @@
 import ProductCardComponent from "@/components/ProductCard/ProductCardComponent";
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -7,11 +8,15 @@ const Catalogo = (props: Props) => {
   return (
     <div
       style={{ backgroundColor: "#eafffd" }}
-      className="relative px-5 py-20 w-screen h-screen overflow-hidden flex justify-center items-center"
+      className="relative p-5 lg:py-20 w-screen h-screen overflow-x-hidden lg:overflow-hidden flex justify-center items-center"
     >
-      <div className="w-full max-w-7xl h-full flex flex-col gap-10">
+      <div className="absolute w-full h-full">
+        <Image src={"/catalogue-art-1.svg"} alt="catalogue-art-1" width={260} height={123} className="absolute bottom-0 w-28 lg:w-80" />
+        <Image src={"/catalogue-art-2.svg"} alt="catalogue-art-2" width={551} height={548} className="absolute -bottom-32 -right-48 w-32 lg:w-96" />
+      </div>
+      <div className="relative w-full max-w-6xl h-full flex flex-col gap-10">
         <h1 className="text-4xl text-teal-700 font-bold">Catálogo</h1>
-        <div className="w-full h-fit grid grid-cols-3 gap-10">
+        <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <ProductCardComponent
             image="/product-1-image.jpg"
             title="Estudio fotográfico para una persona"

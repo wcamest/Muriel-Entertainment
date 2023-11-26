@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonComponent from "../controls/button/ButtonComponent";
 import Image from "next/image";
+import WhatsAppIcon from "../icons/WhatsAppIcon";
 
 type Props = {
   image?: string;
@@ -16,7 +17,7 @@ const ProductCardComponent = (props: Props) => {
   if (!title) return;
 
   return (
-    <div className="border border-solid border-teal-800 border-opacity-40 rounded-md flex flex-col">
+    <div className="border border-solid border-teal-800 border-opacity-40 rounded-md flex flex-col shadow-md">
       <div className="relative w-full aspect-video overflow-hidden rounded-t-md">
         <Image src={image} alt={title} fill={true} className="object-cover" />
       </div>
@@ -27,7 +28,12 @@ const ProductCardComponent = (props: Props) => {
         </div>
         {whatsAppLink && (
           <a href={whatsAppLink} target="_blank">
-            <ButtonComponent fullWidth={true}>Adquirir</ButtonComponent>
+            <ButtonComponent fullWidth={true}>
+                <div className="flex justify-center items-center gap-2">
+                    <WhatsAppIcon />
+                    <span>Adquirir</span>
+                </div>
+            </ButtonComponent>
           </a>
         )}
       </div>

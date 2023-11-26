@@ -8,7 +8,7 @@ const Catalogo = (props: Props) => {
   return (
     <div
       style={{ backgroundColor: "#eafffd" }}
-      className="relative p-5 lg:py-20 w-screen h-screen overflow-x-hidden lg:overflow-hidden flex justify-center items-center"
+      className="relative mt-14 p-5 lg:py-20 w-screen h-screen overflow-x-hidden lg:overflow-hidden flex justify-center items-center"
     >
       <div className="fixed lg:absolute w-screen h-screen lg:w-full lg:h-full">
         <Image src={"/catalogue-art-1.svg"} alt="catalogue-art-1" width={260} height={123} className="absolute bottom-12 lg:bottom-0 w-28 lg:w-80" />

@@ -15,7 +15,7 @@ const InfoItemComponent = (props: Props) => {
 
   return (
     <div className="flex items-center gap-5">
-      <Image src={icon} alt="clock icon" width={60} height={60} />
+      <Image src={icon} alt="clock icon" width={60} height={60} className="w-8 lg:w-14" />
       <div>
         <h2 className="text-2xl font-bold text-teal-800">{title}</h2>
         <span className="text-teal-800">{description}</span>

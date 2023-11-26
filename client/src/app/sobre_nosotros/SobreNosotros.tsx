@@ -7,7 +7,7 @@ const SobreNosotros = (props: Props) => {
   return (
     <div
       style={{ backgroundColor: "#eafffd" }}
-      className="relative p-5 lg:py-20 w-screen h-screen overflow-x-hidden lg:overflow-hidden flex justify-center items-center"
+      className="relative mt-14 p-5 lg:py-20 w-screen h-screen overflow-x-hidden lg:overflow-hidden flex justify-center items-center"
     >
       <div className="w-full max-w-6xl h-full flex flex-col gap-5 lg:gap-10">
         <h1 className="text-4xl text-teal-700 font-bold">Sobre Nosotros</h1>

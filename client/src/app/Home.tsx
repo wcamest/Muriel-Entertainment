@@ -12,7 +12,8 @@ const Home = (props: Props) => {
         <div
           className={`${styles.image_background} absolute w-full h-48 lg:h-full bg-cover bg-center lg:bg-left-top lg:bg-contain`}
         ></div>
-        <div className="relative w-full h-full flex flex-col lg:flex-row items-center lg:items-start justify-end overflow-hidden">
+        <div className="relative w-full h-full flex flex-col lg:flex-row items-center lg:items-start lg:justify-end overflow-hidden">
+          <div className="lg:hidden h-48"></div>
           <div className="relative w-full lg:w-6/12 h-fit lg:h-full flex justify-center items-center">
             <div
               className={`${styles.colored_background_004d44} absolute hidden lg:block`}
